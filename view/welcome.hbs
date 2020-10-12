@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>welcome page</title>
+	
+</head>
+<body>
+<table style="width:500px">
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Image</th>
+  </tr>
+  {{#each data}}
+    <tr>
+        <td>{{this.id}}</td>
+        <td>{{this.name}}</td>
+        <td>{{this.email}}</td>
+        <td><img src="upload/{{this.image}}" width="50px" height="50px"></td>
+    </tr>
+  {{/each}}
+</table>
+</body>
+</html>
